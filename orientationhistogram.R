@@ -3,7 +3,7 @@ library(ggplot2)
 library(dplyr)
 
 
-
+##rename dataframe
 survey_ram <- data.frame(survey$RAM..in.GB.)
 ggplot(survey, aes(RAM..in.GB., fill=as.factor(RAM..in.GB.))) + 
   geom_histogram()+
